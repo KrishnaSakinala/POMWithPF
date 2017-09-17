@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="26098" started-at="2017-09-16T16:12:55Z" finished-at="2017-09-16T16:13:21Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="26098" started-at="2017-09-16T16:12:55Z" finished-at="2017-09-16T16:13:21Z">
+      <class name="com.automationtesting.testcases.PlaceOrderTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4667ae56]" name="init" is-config="true" duration-ms="16601" started-at="2017-09-16T21:42:39Z" finished-at="2017-09-16T21:42:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="carousel()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4667ae56]" name="carousel" duration-ms="40" started-at="2017-09-16T21:42:55Z" finished-at="2017-09-16T21:42:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- carousel -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4667ae56]" name="getResult" is-config="true" duration-ms="5" started-at="2017-09-16T21:42:55Z" finished-at="2017-09-16T21:42:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=carousel status=SUCCESS method=PlaceOrderTest.carousel()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4667ae56] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="placeOrder()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4667ae56]" name="placeOrder" duration-ms="26006" started-at="2017-09-16T21:42:55Z" finished-at="2017-09-16T21:43:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrder -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4667ae56]" name="getResult" is-config="true" duration-ms="1" started-at="2017-09-16T21:43:21Z" finished-at="2017-09-16T21:43:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=placeOrder status=SUCCESS method=PlaceOrderTest.placeOrder()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4667ae56] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4667ae56]" name="tearDown" is-config="true" duration-ms="433" started-at="2017-09-16T21:43:22Z" finished-at="2017-09-16T21:43:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationtesting.testcases.PlaceOrderTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
