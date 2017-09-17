@@ -82,7 +82,7 @@
 					<fileSets>
 					<fileSet>
 						<!-- Report directory Path -->
-						<directory>../test-output</directory>
+						<directory>./test-output</directory>
 						<includes>
 							<!-- Report file name -->
 							<include>emailable-report.html</include>

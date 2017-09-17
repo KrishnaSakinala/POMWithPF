@@ -2,46 +2,46 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="60343" started-at="2017-09-17T03:16:51Z" finished-at="2017-09-17T03:17:51Z">
+  <suite name="Suite" duration-ms="29515" started-at="2017-09-17T06:51:36Z" finished-at="2017-09-17T06:52:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="60343" started-at="2017-09-17T03:16:51Z" finished-at="2017-09-17T03:17:51Z">
+    <test name="Test" duration-ms="29515" started-at="2017-09-17T06:51:36Z" finished-at="2017-09-17T06:52:05Z">
       <class name="com.automationtesting.testcases.PlaceOrderTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="init" is-config="true" duration-ms="10928" started-at="2017-09-17T08:46:40Z" finished-at="2017-09-17T08:46:51Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4909b8da]" name="init" is-config="true" duration-ms="10260" started-at="2017-09-17T12:21:25Z" finished-at="2017-09-17T12:21:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="carousel()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="carousel" duration-ms="20" started-at="2017-09-17T08:46:51Z" finished-at="2017-09-17T08:46:51Z">
+        <test-method status="PASS" signature="carousel()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4909b8da]" name="carousel" duration-ms="15" started-at="2017-09-17T12:21:36Z" finished-at="2017-09-17T12:21:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- carousel -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="getResult" is-config="true" duration-ms="1" started-at="2017-09-17T08:46:51Z" finished-at="2017-09-17T08:46:51Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4909b8da]" name="getResult" is-config="true" duration-ms="2" started-at="2017-09-17T12:21:36Z" finished-at="2017-09-17T12:21:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=carousel status=SUCCESS method=PlaceOrderTest.carousel()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464] output={null}]]]>
+                <![CDATA[[TestResult name=carousel status=SUCCESS method=PlaceOrderTest.carousel()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4909b8da] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="placeOrder()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="placeOrder" duration-ms="60299" started-at="2017-09-17T08:46:51Z" finished-at="2017-09-17T08:47:51Z">
+        <test-method status="PASS" signature="placeOrder()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4909b8da]" name="placeOrder" duration-ms="29483" started-at="2017-09-17T12:21:36Z" finished-at="2017-09-17T12:22:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrder -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="getResult" is-config="true" duration-ms="0" started-at="2017-09-17T08:47:51Z" finished-at="2017-09-17T08:47:51Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4909b8da]" name="getResult" is-config="true" duration-ms="0" started-at="2017-09-17T12:22:05Z" finished-at="2017-09-17T12:22:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=placeOrder status=SUCCESS method=PlaceOrderTest.placeOrder()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464] output={null}]]]>
+                <![CDATA[[TestResult name=placeOrder status=SUCCESS method=PlaceOrderTest.placeOrder()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4909b8da] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="tearDown" is-config="true" duration-ms="709" started-at="2017-09-17T08:47:52Z" finished-at="2017-09-17T08:47:52Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@4909b8da]" name="tearDown" is-config="true" duration-ms="533" started-at="2017-09-17T12:22:05Z" finished-at="2017-09-17T12:22:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
