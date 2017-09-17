@@ -1,7 +1,6 @@
 package com.automationtesting.basetest;
 
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -13,6 +12,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import com.automationtesting.util.ExcelApiTest;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.markuputils.ExtentColor;
@@ -31,8 +31,13 @@ public class BaseTest {
 	public FileInputStream fis = null;
 	public Properties prop = null;
 
+	public ExcelApiTest xls = null;
+
 	@BeforeSuite
-	public void init() throws IOException {
+	public void init() throws Exception {
+
+		xls = new ExcelApiTest(
+				System.getProperty("user.dir") + "/src/main/java/com/automationtesting/repo/TestData.xlsx");
 
 		fis = new FileInputStream(
 				"/Users/krishnasakinala/hubiC/workspace/POMWPF_Framework/src/com/automationtesting/repo/config.properties");
@@ -89,6 +94,7 @@ public class BaseTest {
 		}
 	}
 
+	@AfterMethod
 	@AfterSuite
 	public void tearDown() {
 		extent.flush();
