@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="25729" started-at="2017-09-17T02:09:24Z" finished-at="2017-09-17T02:09:50Z">
+  <suite name="Suite" duration-ms="60343" started-at="2017-09-17T03:16:51Z" finished-at="2017-09-17T03:17:51Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="25729" started-at="2017-09-17T02:09:24Z" finished-at="2017-09-17T02:09:50Z">
+    <test name="Test" duration-ms="60343" started-at="2017-09-17T03:16:51Z" finished-at="2017-09-17T03:17:51Z">
       <class name="com.automationtesting.testcases.PlaceOrderTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="init" is-config="true" duration-ms="11009" started-at="2017-09-17T07:39:13Z" finished-at="2017-09-17T07:39:24Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="init" is-config="true" duration-ms="10928" started-at="2017-09-17T08:46:40Z" finished-at="2017-09-17T08:46:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="carousel()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="carousel" duration-ms="16" started-at="2017-09-17T07:39:24Z" finished-at="2017-09-17T07:39:24Z">
+        <test-method status="PASS" signature="carousel()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="carousel" duration-ms="20" started-at="2017-09-17T08:46:51Z" finished-at="2017-09-17T08:46:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- carousel -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="getResult" is-config="true" duration-ms="2" started-at="2017-09-17T07:39:24Z" finished-at="2017-09-17T07:39:24Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="getResult" is-config="true" duration-ms="1" started-at="2017-09-17T08:46:51Z" finished-at="2017-09-17T08:46:51Z">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="placeOrder()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="placeOrder" duration-ms="25695" started-at="2017-09-17T07:39:24Z" finished-at="2017-09-17T07:39:50Z">
+        <test-method status="PASS" signature="placeOrder()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="placeOrder" duration-ms="60299" started-at="2017-09-17T08:46:51Z" finished-at="2017-09-17T08:47:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrder -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="getResult" is-config="true" duration-ms="0" started-at="2017-09-17T07:39:50Z" finished-at="2017-09-17T07:39:50Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="getResult" is-config="true" duration-ms="0" started-at="2017-09-17T08:47:51Z" finished-at="2017-09-17T08:47:51Z">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="tearDown" is-config="true" duration-ms="706" started-at="2017-09-17T07:39:50Z" finished-at="2017-09-17T07:39:51Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationtesting.testcases.PlaceOrderTest@3a03464]" name="tearDown" is-config="true" duration-ms="709" started-at="2017-09-17T08:47:52Z" finished-at="2017-09-17T08:47:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
