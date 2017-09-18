@@ -94,9 +94,9 @@ public class BaseTest {
 		}
 	}
 
-	@AfterMethod
 	@AfterSuite
 	public void tearDown() {
 		extent.flush();
+		driver.quit();
 	}
 }

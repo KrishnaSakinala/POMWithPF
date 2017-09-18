@@ -4,7 +4,6 @@
 /Users/krishnasakinala/Documents/workspace/POMWithPF/src/main/java/com/automationtesting/basepage/BasePage.java
 /Users/krishnasakinala/Documents/workspace/POMWithPF/src/main/java/com/automationtesting/pages/HomePage.java
 /Users/krishnasakinala/Documents/workspace/POMWithPF/src/main/java/com/automationtesting/repo/Locator.java
-/Users/krishnasakinala/Documents/workspace/POMWithPF/src/main/java/com/automationtesting/pages/PlaceOrderPage.java
 /Users/krishnasakinala/Documents/workspace/POMWithPF/src/main/java/com/automationtesting/pages/CheckOutPage.java
 /Users/krishnasakinala/Documents/workspace/POMWithPF/src/main/java/com/automationtesting/pages/SearchResultsPage.java
 /Users/krishnasakinala/Documents/workspace/POMWithPF/src/main/java/com/automationtesting/pages/ProductDisplayPage.java

@@ -67,6 +67,7 @@ public class CheckOutPage extends BasePage {
 		zipcodeTextbox.sendKeys("123456");
 		cashOnDeliveryRadioButton.click();
 		placeOrderButton.click();
+
 	}
 
 }
