@@ -1,12 +1,20 @@
 package com.automationtesting.basetest;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -40,7 +48,7 @@ public class BaseTest {
 				System.getProperty("user.dir") + "/src/main/java/com/automationtesting/repo/TestData.xlsx");
 
 		fis = new FileInputStream(
-				"/Users/krishnasakinala/hubiC/workspace/POMWPF_Framework/src/com/automationtesting/repo/config.properties");
+				System.getProperty("user.dir") + "/src/main/java/com/automationtesting/repo/config.properties");
 		prop = new Properties();
 		prop.load(fis);
 
@@ -80,12 +88,40 @@ public class BaseTest {
 		test.info(MarkupHelper.createLabel(logInfo, ExtentColor.BLUE));
 	}
 
+	public static String capture(WebDriver driver, String screenShotName) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		String dest = System.getProperty("user.dir") + "/ErrorScreenshots/" + screenShotName + getCurrentDateTime()
+				+ ".png";
+		File destination = new File(dest);
+		FileUtils.copyFile(source, destination);
+
+		return dest;
+	}
+
+	public static String getCurrentDateTime() {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+		Date date = new Date();
+
+		return sdf.format(date);
+	}
+
+	public void verifyTitle(String title) {
+		Assert.assertEquals(driver.getTitle(), title);
+	}
+
 	@AfterMethod
-	public void getResult(ITestResult result) {
+	public void getResult(ITestResult result) throws IOException {
 		if (result.getStatus() == ITestResult.FAILURE) {
+			String screenShotPath = capture(driver, "screenShotName");
 			test.fail(MarkupHelper.createLabel(result.getName() + " Test case FAILED due to below issues:",
 					ExtentColor.RED));
 			test.fail(result.getThrowable());
+
+			if (prop.get("takescreenshot").equals("true")) {
+				test.fail("Snapshot below: " + test.addScreenCaptureFromPath(screenShotPath));
+			}
+
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			test.pass(MarkupHelper.createLabel(result.getName() + " Test Case PASSED", ExtentColor.GREEN));
 		} else {

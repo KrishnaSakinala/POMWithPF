@@ -15,13 +15,13 @@ import com.aventstack.extentreports.Status;
 
 public class PlaceOrderTest extends BaseTest {
 
-	@Test
+	@Test(priority = 2)
 	public void placeOrder() throws InterruptedException {
 		test = extent.createTest("placeOrder", "Placing an order in Automating Testing Practice Site.");
 
 		if (!DataUtil.isTestExecutable(xls, "placeOrder")) {
-			test.log(Status.SKIP, "Skipping the test as Rnumode is N");
-			throw new SkipException("Skipping the test as Rnumode is N");
+			test.log(Status.SKIP, "Skipping the test as RunMode is N");
+			throw new SkipException("Skipping the test as RunMode is N");
 		}
 
 		HomePage homePage = new HomePage(driver, test);
@@ -36,19 +36,19 @@ public class PlaceOrderTest extends BaseTest {
 		logIntoReport("Navigated to proceed checkout page");
 		checkoutPage.placeOrder();
 		logIntoReport("Placed the order");
-
 	}
 
 	@Test
 	public void carousel() {
 		test = extent.createTest("carousel", "Verify only 3 images are in HomePage.");
 
+		verifyTitle("Title");
+
 		if (!DataUtil.isTestExecutable(xls, "carousel")) {
-			test.log(Status.SKIP, "Skipping the test as Rnumode is N");
-			throw new SkipException("Skipping the test as Rnumode is N");
+			test.log(Status.SKIP, "Skipping the test as RunMode is N");
+			throw new SkipException("Skipping the test as RunMode is N");
 		}
 
 		logIntoReport("This is to test carousel functionality");
 	}
-
 }

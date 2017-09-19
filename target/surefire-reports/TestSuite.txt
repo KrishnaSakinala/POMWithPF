@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 55.673 s - in TestSuite
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 39.493 s <<< FAILURE! - in TestSuite
+carousel(com.automationtesting.testcases.PlaceOrderTest)  Time elapsed: 0.063 s  <<< FAILURE!
+java.lang.AssertionError: expected [Title] but found [Automation Practice Site]
+	at com.automationtesting.testcases.PlaceOrderTest.carousel(PlaceOrderTest.java:47)
+
+placeOrder(com.automationtesting.testcases.PlaceOrderTest)  Time elapsed: 24.053 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.automationtesting.testcases.PlaceOrderTest.placeOrder(PlaceOrderTest.java:40)
+
